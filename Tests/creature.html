@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>creature</title>
+  <script type="text/javascript">
+    function description() {
+      document.write("speed = " + this.speed)
+    }
+
+    function creature(speed) {
+      this.speed = speed;
+      this.description = description;
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <script type="text/javascript">
+    var creature1 = new creature(5);
+    creature1.description();
+
+  </script>
+
+</body>
+
+</html>
